@@ -95,3 +95,8 @@ body.separate-blog.separate-layout #blog-entries>*, .separate-layout .sidebar-bo
     display: inline-block;
 
 }
+
+.separate-layout #main #content-wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
