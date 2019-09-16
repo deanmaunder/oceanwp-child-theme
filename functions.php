@@ -37,7 +37,8 @@ function ocean_add_custom_fonts() {
 function my_post_layout_class( $class ) {
 
 	// Alter your layout
-	if ( tribe_is_event()
+	if (function_exists('tribe_is_event')) {
+		if ( tribe_is_event()
 		|| tribe_is_view()
 		|| tribe_is_list_view()
 		|| tribe_is_event_category()
@@ -46,6 +47,7 @@ function my_post_layout_class( $class ) {
 		|| tribe_is_month()
 		|| is_singular( 'tribe_events' ) ) {
 		$class = 'full-width';
+		}
 	}
 
 	// Return correct class
