@@ -55,6 +55,6 @@ a:hover {
 	display: none;
 }
 
-.dropdown-menu .sub-menu {
+.dropdown-menu .sub-menu .searchform-dropdown {
 	border-top: 3px solid #c02424;
 }
