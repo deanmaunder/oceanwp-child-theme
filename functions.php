@@ -33,3 +33,23 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 function ocean_add_custom_fonts() {
 	return array( 'Jotia-Medium', 'FoundrySterling-Medium' ); // You can add more then 1 font to the array!
 }
+
+function my_post_layout_class( $class ) {
+
+	// Alter your layout
+	if ( tribe_is_event()
+		|| tribe_is_view()
+		|| tribe_is_list_view()
+		|| tribe_is_event_category()
+		|| tribe_is_in_main_loop()
+		|| tribe_is_day()
+		|| tribe_is_month()
+		|| is_singular( 'tribe_events' ) ) {
+		$class = 'full-width';
+	}
+
+	// Return correct class
+	return $class;
+
+}
+add_filter( 'ocean_post_layout_class', 'my_post_layout_class', 20 );
