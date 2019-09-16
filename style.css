@@ -68,4 +68,8 @@ a:hover {
     border: 2px solid #666;
 }
 
-.widget_atlas_api_timetable
+.widget_atlas_api_timetable > ul > li {
+    border: 1px solid #666;
+    list-style: none;
+    text-indent: 5px;
+}
