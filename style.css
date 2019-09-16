@@ -51,6 +51,10 @@ a:hover {
 	color: #c02424 !important;
 }
 
+.widget-title {
+    border-color: #c02424;
+}
+
 .page-header {
 	display: none;
 }
@@ -58,3 +62,12 @@ a:hover {
 .dropdown-menu .sub-menu .searchform-dropdown {
 	border-top: 3px solid #c02424;
 }
+
+.sidebar-box {
+    border: 3px solid #f0f0f0;
+}
+
+#blog-entries {
+    border: 3px solid #f0f0f0;
+}
+
