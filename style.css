@@ -59,11 +59,11 @@ a:hover {
 	display: none;
 }
 
-.dropdown-menu .sub-menu .searchform-dropdown {
+.dropdown-menu, .sub-menu, .searchform-dropdown {
 	border-top: 3px solid #c02424;
 }
 
-#blog-entries #primary .sidebar-box {
+#blog-entries, #primary, .sidebar-box {
     border: 3px solid #e6e6e6;
 }
 
