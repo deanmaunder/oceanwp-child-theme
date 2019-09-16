@@ -28,3 +28,8 @@ function oceanwp_child_enqueue_parent_style() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+
+// Add custom font to font settings
+function ocean_add_custom_fonts() {
+	return array( 'Jotia-Medium', 'FoundrySterling-Medium' ); // You can add more then 1 font to the array!
+}

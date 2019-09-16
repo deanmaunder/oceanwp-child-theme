@@ -9,3 +9,52 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+
+@font-face {
+    font-family: 'Jotia-Medium';
+    src: url('fonts/Jotia-Medium.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Jotia-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Jotia-Medium.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Jotia-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Jotia-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'FoundrySterling-Medium';
+    src: url('fonts/FoundrySterling-Medium.eot'); /* IE9 Compat Modes */
+    src: url('fonts/FoundrySterling-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/FoundrySterling-Medium.woff') format('woff'), /* Modern Browsers */
+         url('fonts/FoundrySterling-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/FoundrySterling-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Jotia-Medium';
+}
+
+.main-menu {
+	font-family: 'Jotia-Medium';
+	font-weight: 500 !important;
+	font-size: 15px !important;
+
+}
+
+.sub-menu {
+	font-family: 'FoundrySterling-Medium';
+}
+
+body {
+	font-family: 'FoundrySterling-Medium';
+}
+
+a:hover {
+	color: #c02424 !important;
+}
+
+.page-header {
+	display: none;
+}
+
+.dropdown-menu .sub-menu {
+	border-top: 3px solid #c02424;
+}
