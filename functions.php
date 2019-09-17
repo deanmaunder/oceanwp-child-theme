@@ -46,7 +46,7 @@ function my_post_layout_class( $class ) {
 		|| tribe_is_day()
 		|| tribe_is_month()
 		|| is_singular( 'tribe_events' ) ) {
-		$class = 'full-width';
+		$class = 'left-sidebar';
 		}
 	}
 
